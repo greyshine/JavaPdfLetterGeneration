@@ -1,0 +1,125 @@
+/*
+http://paletton.com/#uid=1180u0kllll77uPeeq4ssgBFGbR
+*/
+
+* {margin:0;padding:0;}
+
+html, body {
+	height: 100%;
+	min-height: 100%;
+}
+
+div#global-messages ul {
+	padding: 10px;
+	margin: 5px 10px;
+	border-radius: 10px;
+}
+div#global-messages ul li {
+	list-style: none;
+}
+
+div#global-messages ul.messages {
+	border: 1px solid black;
+}
+
+div#global-messages ul.warnings {
+	border: 1px solid orange;
+}
+
+div#global-messages ul.errors {
+	border: 1px solid red;
+}
+
+form div.field-error {
+	margin-top: 10px;
+	color: red;
+}
+
+form input.field-error, form textarea.field-error {
+	border-color: red !important;
+	/*background-color: #F9C9D6 !important;*/
+}
+
+input[type=submit], button[type=submit] {
+	margin-left: 20px;
+}
+
+div#div-imprint {
+	margin: 20px;
+}
+
+div#div-imprint h1 {
+	font-weight: bold;
+	font-size: 1.2em;
+}
+
+div#div-imprint h2 {
+	font-weight: bold;
+	font-size: 1.0em;
+	margin: 10px auto;
+}
+
+div#cookieDisclaimer {
+	color: black;
+	background-color: silver;
+	margin: 3px auto 15px;
+	border: 1px solid yellow;
+	padding:5px;
+	border-radius: 5px;
+	width: 96%;
+}
+
+div#topbar {
+	background-color: #F6E7BF;
+	padding: 1em 1em 2em;
+	margin-bottom: 10px;
+	border-bottom: 1px solid black;
+	
+}
+
+
+div#topbar > div {
+	display: inline-block;
+	width: 49%;
+	border: 0px solid grey;
+}
+
+div#topbar > div:last-child {
+	text-align: right;
+}
+
+div.main-center {
+	
+	min-height: calc(80vh);
+}
+
+div#bottom {
+	background-color: #F6E7BF;
+	margin-top: 10px;
+	padding: 10px;
+	border-top: 1px solid black;
+	text-align: right;
+	height: 3em;
+}
+
+div#div-pdf {
+	height: 100%;
+}
+
+div#div-about {
+	margin: 10px;
+}
+
+div#div-login {
+	margin: 10px;
+}
+
+div#div-register {
+	margin: 10px;
+}
+
+div.navtree-user {
+	background-color: green;
+}
+
+

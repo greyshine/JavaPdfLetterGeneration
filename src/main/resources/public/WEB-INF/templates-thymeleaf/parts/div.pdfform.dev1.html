@@ -1,0 +1,82 @@
+<html xmlns:th="http://www.thymeleaf.org" th:fragment="pdfform">
+
+	<div id="div-letter-input">
+		
+		<div class="topimage" >
+
+			<h2>Briefkopf</h2>
+			
+			<img class="image" src="" th:src="${pdfform_data_dev1.topimage==null||pdfform_data_dev1.topimage==''?'':'data:image/*;base64,'+pdfform_data_dev1.topimage}" alt="" style="max-height: 100px;" onclick="$('input#fileupload').click();" /><br/>
+			<input name="topimage" type="hidden" th:value="${pdfform_data_dev1.topimage}" />
+			<input id="fileupload" type="file" />
+			
+			<script type="text/javascript">
+			$('div#div-letter-input input#fileupload').fileSelected( function(inBase64, inFile){
+				
+				// limit to 1,5MB
+				console.log( inFile );
+				console.log( inFile.length );
+				if ( inFile.size > 1572864 ) {
+					alert('only 1.5 MB');	
+					return;
+				}
+				
+				$('div#div-letter-input img.image').attr('src', inBase64);
+				inBase64=inBase64.substr( inBase64.indexOf(';base64,')+8 );
+				$('input[name=topimage]').val( inBase64 );
+			} );
+			</script>
+		</div>
+		
+		<div class="addresslines" >
+		
+			<h2>Adressierung</h2>
+		
+			<div class="field-error" th:each="i:${WebContext.getFieldErrors('senderline1')}" th:text="${i}" th:classappend="${WebContext.isFieldError('senderline1')} ? field-error"></div>
+			<div><input name="senderline1" placeholder="sender line 1" th:value="${pdfform_data_dev1.senderline1}"/></div>
+			<div><input name="senderline2" placeholder="sender line 2" th:value="${pdfform_data_dev1.senderline2}"/></div>
+		
+			<hr/>
+		
+			<div class="field-error" th:each="i:${WebContext.getFieldErrors('addressline1')}" th:text="${i}"></div>
+			<div><input name="addressline1" placeholder="address line 1" th:value="${pdfform_data_dev1.addressline1}"/></div>
+			<div><input name="addressline2" placeholder="address line 2" th:value="${pdfform_data_dev1.addressline2}"/></div>
+			<div><input name="addressline3" placeholder="address line 3" th:value="${pdfform_data_dev1.addressline3}"/></div>
+			<div><input name="addressline4" placeholder="address line 4" th:value="${pdfform_data_dev1.addressline4}"/></div>
+			<div><input name="addressline5" placeholder="address line 5" th:value="${pdfform_data_dev1.addressline5}"/></div>
+			<div><input name="addressline6" placeholder="address line 6" th:value="${pdfform_data_dev1.addressline6}"/></div>
+		</div>
+		
+		<div class="extralines" >
+		
+			<h2>Briefkopf rechte Seite</h2>
+		
+			<div><input name="extraline1left" placeholder="key1"/><input name="extraline1right" placeholder="value1"/></div>
+			<div><input name="extraline2left" placeholder="key2"/><input name="extraline2right" placeholder="value2"/></div>
+			<div><input name="extraline3left" placeholder="key3"/><input name="extraline3right" placeholder="value3"/></div>
+			<div><input name="extraline4left" placeholder="key4"/><input name="extraline4right" placeholder="value4"/></div>
+			<div><input name="extraline5left" placeholder="key5"/><input name="extraline5right" placeholder="value5"/></div>
+			<div><input name="extraline6left" placeholder="key6"/><input name="extraline6right" placeholder="value6"/></div>
+			<div><input name="extraline7left" placeholder="key7"/><input name="extraline7right" placeholder="value7"/></div>
+			<div><input name="extraline8left" placeholder="key8"/><input name="extraline8right" placeholder="value8"/></div>
+			<div><input name="extraline9left" placeholder="key9"/><input name="extraline9right" placeholder="value9"/></div>
+		</div>
+		
+		<div class="letterlines">
+		
+			<h2>Brieftext</h2>
+
+			<div><input class="location" name="location" placeholder="location"  th:value="${pdfform_data_dev1.location}"/>,&nbsp;<input name="date" placeholder="dd.MM.yyyy"  th:value="${pdfform_data_dev1.date}" /></div>
+		
+			<div><input class="subjectline" name="subjectline1" placeholder="subject line 1" th:value="${pdfform_data_dev1.subjectline1}"/></div>
+			<div><input class="subjectline" name="subjectline2" placeholder="subject line 2" th:value="${pdfform_data_dev1.subjectline2}"/></div>
+			
+			<div class="field-error" th:each="i:${WebContext.getFieldErrors('lettertext')}" th:text="${i}"></div>
+			
+			<textarea name="lettertext" th:text="${pdfform_data_dev1.lettertext}" th:classappend="${WebContext.isFieldError('lettertext')} ? field-error"></textarea>
+	
+		</div>
+		
+	</div>
+
+</html>

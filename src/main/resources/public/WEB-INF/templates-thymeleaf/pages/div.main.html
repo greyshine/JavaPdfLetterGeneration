@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" th:fragment="main">
+
+	<form action="/pdfForm" method="post">
+
+		<div th:replace="parts/div.pdfform.dev1.html"></div>
+		
+		<button class="pure-button pure-button-primary" type="submit">PDF erzeugen</button>
+		
+		
+	</form>
+	
+</html>
+

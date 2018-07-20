@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" th:fragment="login">
+
+	<form class="pure-form" action="/login" method="post">
+    <fieldset>
+        <legend>Login</legend>
+
+        <input type="text" name="email" placeholder="Email" required="required" class="field-error-">
+        <input type="password" name="password" placeholder="Password" required="required">
+
+        <label for="remember">
+        	<a href="/page/sendPassword" onclick="">Passwort vergessen</a>
+        </label>
+        
+    </fieldset>
+    
+    <button type="submit" class="pure-button pure-button-primary">Login</button>
+
+</form>
+
+<hr style="margin: 4em auto 1em;"/>
+<a href="/register">Registrieren</a>
+
+</html>
+

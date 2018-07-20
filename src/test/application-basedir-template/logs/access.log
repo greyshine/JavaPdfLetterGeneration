@@ -1,0 +1,577 @@
+[20.07.2018 23:33:46.108][http-nio-8080-exec-1] {
+  "uri": "/",
+  "host": "0:0:0:0:0:0:0:1",
+  "locale": "de",
+  "headers": {
+    "host": [
+      "localhost:8080"
+    ],
+    "connection": [
+      "keep-alive"
+    ],
+    "upgrade-insecure-requests": [
+      "1"
+    ],
+    "user-agent": [
+      "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+    ],
+    "accept": [
+      "text/html,application/xhtml+xml,application/xml;q\u003d0.9,image/webp,image/apng,*/*;q\u003d0.8"
+    ],
+    "dnt": [
+      "1"
+    ],
+    "accept-encoding": [
+      "gzip, deflate, br"
+    ],
+    "accept-language": [
+      "de,en;q\u003d0.9,en-GB;q\u003d0.8,en-US;q\u003d0.7"
+    ]
+  },
+  "parameters": {}
+}[20.07.2018 23:33:46.209][/ > de.greyshine.pdflettercreation.IndexController.index] {
+  "uri": "/",
+  "host": "0:0:0:0:0:0:0:1",
+  "locale": "de",
+  "headers": {
+    "host": [
+      "localhost:8080"
+    ],
+    "connection": [
+      "keep-alive"
+    ],
+    "upgrade-insecure-requests": [
+      "1"
+    ],
+    "user-agent": [
+      "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+    ],
+    "accept": [
+      "text/html,application/xhtml+xml,application/xml;q\u003d0.9,image/webp,image/apng,*/*;q\u003d0.8"
+    ],
+    "dnt": [
+      "1"
+    ],
+    "accept-encoding": [
+      "gzip, deflate, br"
+    ],
+    "accept-language": [
+      "de,en;q\u003d0.9,en-GB;q\u003d0.8,en-US;q\u003d0.7"
+    ]
+  },
+  "parameters": {}
+}[20.07.2018 23:33:53.105][http-nio-8080-exec-3] {
+  "uri": "/page/imprint",
+  "host": "0:0:0:0:0:0:0:1",
+  "locale": "de",
+  "headers": {
+    "host": [
+      "localhost:8080"
+    ],
+    "connection": [
+      "keep-alive"
+    ],
+    "upgrade-insecure-requests": [
+      "1"
+    ],
+    "user-agent": [
+      "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+    ],
+    "accept": [
+      "text/html,application/xhtml+xml,application/xml;q\u003d0.9,image/webp,image/apng,*/*;q\u003d0.8"
+    ],
+    "dnt": [
+      "1"
+    ],
+    "referer": [
+      "http://localhost:8080/"
+    ],
+    "accept-encoding": [
+      "gzip, deflate, br"
+    ],
+    "accept-language": [
+      "de,en;q\u003d0.9,en-GB;q\u003d0.8,en-US;q\u003d0.7"
+    ],
+    "cookie": [
+      "JSESSIONID\u003dCC756F14A8CFF0CA5A7FB48BDCE64125"
+    ]
+  },
+  "parameters": {}
+}[20.07.2018 23:33:53.149][/page/imprint > de.greyshine.pdflettercreation.IndexController.showPage] {
+  "uri": "/error",
+  "host": "0:0:0:0:0:0:0:1",
+  "locale": "de",
+  "headers": {
+    "host": [
+      "localhost:8080"
+    ],
+    "connection": [
+      "keep-alive"
+    ],
+    "upgrade-insecure-requests": [
+      "1"
+    ],
+    "user-agent": [
+      "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+    ],
+    "accept": [
+      "text/html,application/xhtml+xml,application/xml;q\u003d0.9,image/webp,image/apng,*/*;q\u003d0.8"
+    ],
+    "dnt": [
+      "1"
+    ],
+    "referer": [
+      "http://localhost:8080/"
+    ],
+    "accept-encoding": [
+      "gzip, deflate, br"
+    ],
+    "accept-language": [
+      "de,en;q\u003d0.9,en-GB;q\u003d0.8,en-US;q\u003d0.7"
+    ],
+    "cookie": [
+      "JSESSIONID\u003dCC756F14A8CFF0CA5A7FB48BDCE64125"
+    ]
+  },
+  "parameters": {}
+}[20.07.2018 23:33:57.650][http-nio-8080-exec-5] {
+  "uri": "/page/about",
+  "host": "0:0:0:0:0:0:0:1",
+  "locale": "de",
+  "headers": {
+    "host": [
+      "localhost:8080"
+    ],
+    "connection": [
+      "keep-alive"
+    ],
+    "upgrade-insecure-requests": [
+      "1"
+    ],
+    "user-agent": [
+      "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+    ],
+    "accept": [
+      "text/html,application/xhtml+xml,application/xml;q\u003d0.9,image/webp,image/apng,*/*;q\u003d0.8"
+    ],
+    "dnt": [
+      "1"
+    ],
+    "referer": [
+      "http://localhost:8080/"
+    ],
+    "accept-encoding": [
+      "gzip, deflate, br"
+    ],
+    "accept-language": [
+      "de,en;q\u003d0.9,en-GB;q\u003d0.8,en-US;q\u003d0.7"
+    ],
+    "cookie": [
+      "JSESSIONID\u003dCC756F14A8CFF0CA5A7FB48BDCE64125"
+    ]
+  },
+  "parameters": {}
+}[20.07.2018 23:34:07.690][http-nio-8080-exec-4] {
+  "uri": "/pdfForm",
+  "host": "0:0:0:0:0:0:0:1",
+  "locale": "de",
+  "headers": {
+    "host": [
+      "localhost:8080"
+    ],
+    "connection": [
+      "keep-alive"
+    ],
+    "content-length": [
+      "472"
+    ],
+    "cache-control": [
+      "max-age\u003d0"
+    ],
+    "origin": [
+      "http://localhost:8080"
+    ],
+    "upgrade-insecure-requests": [
+      "1"
+    ],
+    "content-type": [
+      "application/x-www-form-urlencoded"
+    ],
+    "user-agent": [
+      "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+    ],
+    "accept": [
+      "text/html,application/xhtml+xml,application/xml;q\u003d0.9,image/webp,image/apng,*/*;q\u003d0.8"
+    ],
+    "dnt": [
+      "1"
+    ],
+    "referer": [
+      "http://localhost:8080/"
+    ],
+    "accept-encoding": [
+      "gzip, deflate, br"
+    ],
+    "accept-language": [
+      "de,en;q\u003d0.9,en-GB;q\u003d0.8,en-US;q\u003d0.7"
+    ],
+    "cookie": [
+      "JSESSIONID\u003dCC756F14A8CFF0CA5A7FB48BDCE64125"
+    ]
+  },
+  "parameters": {
+    "topimage": [
+      ""
+    ],
+    "senderline1": [
+      ""
+    ],
+    "senderline2": [
+      ""
+    ],
+    "addressline1": [
+      ""
+    ],
+    "addressline2": [
+      ""
+    ],
+    "addressline3": [
+      ""
+    ],
+    "addressline4": [
+      ""
+    ],
+    "addressline5": [
+      ""
+    ],
+    "addressline6": [
+      ""
+    ],
+    "extraline1left": [
+      ""
+    ],
+    "extraline1right": [
+      ""
+    ],
+    "extraline2left": [
+      ""
+    ],
+    "extraline2right": [
+      ""
+    ],
+    "extraline3left": [
+      ""
+    ],
+    "extraline3right": [
+      ""
+    ],
+    "extraline4left": [
+      ""
+    ],
+    "extraline4right": [
+      ""
+    ],
+    "extraline5left": [
+      ""
+    ],
+    "extraline5right": [
+      ""
+    ],
+    "extraline6left": [
+      ""
+    ],
+    "extraline6right": [
+      ""
+    ],
+    "extraline7left": [
+      ""
+    ],
+    "extraline7right": [
+      ""
+    ],
+    "extraline8left": [
+      ""
+    ],
+    "extraline8right": [
+      ""
+    ],
+    "extraline9left": [
+      ""
+    ],
+    "extraline9right": [
+      ""
+    ],
+    "location": [
+      ""
+    ],
+    "date": [
+      ""
+    ],
+    "subjectline1": [
+      ""
+    ],
+    "subjectline2": [
+      ""
+    ],
+    "lettertext": [
+      ""
+    ]
+  }
+}[20.07.2018 23:34:28.317][http-nio-8080-exec-6] {
+  "uri": "/pdfForm",
+  "host": "0:0:0:0:0:0:0:1",
+  "locale": "de",
+  "headers": {
+    "host": [
+      "localhost:8080"
+    ],
+    "connection": [
+      "keep-alive"
+    ],
+    "content-length": [
+      "497"
+    ],
+    "cache-control": [
+      "max-age\u003d0"
+    ],
+    "origin": [
+      "http://localhost:8080"
+    ],
+    "upgrade-insecure-requests": [
+      "1"
+    ],
+    "content-type": [
+      "application/x-www-form-urlencoded"
+    ],
+    "user-agent": [
+      "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+    ],
+    "accept": [
+      "text/html,application/xhtml+xml,application/xml;q\u003d0.9,image/webp,image/apng,*/*;q\u003d0.8"
+    ],
+    "dnt": [
+      "1"
+    ],
+    "referer": [
+      "http://localhost:8080/pdfForm"
+    ],
+    "accept-encoding": [
+      "gzip, deflate, br"
+    ],
+    "accept-language": [
+      "de,en;q\u003d0.9,en-GB;q\u003d0.8,en-US;q\u003d0.7"
+    ],
+    "cookie": [
+      "JSESSIONID\u003dCC756F14A8CFF0CA5A7FB48BDCE64125"
+    ]
+  },
+  "parameters": {
+    "topimage": [
+      ""
+    ],
+    "senderline1": [
+      ""
+    ],
+    "senderline2": [
+      ""
+    ],
+    "addressline1": [
+      "Bal 1"
+    ],
+    "addressline2": [
+      "Bla 2"
+    ],
+    "addressline3": [
+      ""
+    ],
+    "addressline4": [
+      ""
+    ],
+    "addressline5": [
+      ""
+    ],
+    "addressline6": [
+      ""
+    ],
+    "extraline1left": [
+      ""
+    ],
+    "extraline1right": [
+      ""
+    ],
+    "extraline2left": [
+      ""
+    ],
+    "extraline2right": [
+      ""
+    ],
+    "extraline3left": [
+      ""
+    ],
+    "extraline3right": [
+      ""
+    ],
+    "extraline4left": [
+      ""
+    ],
+    "extraline4right": [
+      ""
+    ],
+    "extraline5left": [
+      ""
+    ],
+    "extraline5right": [
+      ""
+    ],
+    "extraline6left": [
+      ""
+    ],
+    "extraline6right": [
+      ""
+    ],
+    "extraline7left": [
+      ""
+    ],
+    "extraline7right": [
+      ""
+    ],
+    "extraline8left": [
+      ""
+    ],
+    "extraline8right": [
+      ""
+    ],
+    "extraline9left": [
+      ""
+    ],
+    "extraline9right": [
+      ""
+    ],
+    "location": [
+      ""
+    ],
+    "date": [
+      ""
+    ],
+    "subjectline1": [
+      ""
+    ],
+    "subjectline2": [
+      ""
+    ],
+    "lettertext": [
+      "Etwas Brieftext"
+    ]
+  }
+}[20.07.2018 23:35:18.610][/pdfForm > de.greyshine.pdflettercreation.PdfRenderController.indexPost] {
+  "uri": "/page/about",
+  "host": "0:0:0:0:0:0:0:1",
+  "locale": "de",
+  "headers": {
+    "host": [
+      "localhost:8080"
+    ],
+    "connection": [
+      "keep-alive"
+    ],
+    "upgrade-insecure-requests": [
+      "1"
+    ],
+    "user-agent": [
+      "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+    ],
+    "accept": [
+      "text/html,application/xhtml+xml,application/xml;q\u003d0.9,image/webp,image/apng,*/*;q\u003d0.8"
+    ],
+    "dnt": [
+      "1"
+    ],
+    "referer": [
+      "http://localhost:8080/pdfForm"
+    ],
+    "accept-encoding": [
+      "gzip, deflate, br"
+    ],
+    "accept-language": [
+      "de,en;q\u003d0.9,en-GB;q\u003d0.8,en-US;q\u003d0.7"
+    ],
+    "cookie": [
+      "JSESSIONID\u003dCC756F14A8CFF0CA5A7FB48BDCE64125"
+    ]
+  },
+  "parameters": {}
+}[20.07.2018 23:35:23.151][/page/about > de.greyshine.pdflettercreation.IndexController.showPage] {
+  "uri": "/page/imprint",
+  "host": "0:0:0:0:0:0:0:1",
+  "locale": "de",
+  "headers": {
+    "host": [
+      "localhost:8080"
+    ],
+    "connection": [
+      "keep-alive"
+    ],
+    "upgrade-insecure-requests": [
+      "1"
+    ],
+    "user-agent": [
+      "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+    ],
+    "accept": [
+      "text/html,application/xhtml+xml,application/xml;q\u003d0.9,image/webp,image/apng,*/*;q\u003d0.8"
+    ],
+    "dnt": [
+      "1"
+    ],
+    "referer": [
+      "http://localhost:8080/page/about"
+    ],
+    "accept-encoding": [
+      "gzip, deflate, br"
+    ],
+    "accept-language": [
+      "de,en;q\u003d0.9,en-GB;q\u003d0.8,en-US;q\u003d0.7"
+    ],
+    "cookie": [
+      "JSESSIONID\u003dCC756F14A8CFF0CA5A7FB48BDCE64125"
+    ]
+  },
+  "parameters": {}
+}[20.07.2018 23:35:23.165][/page/imprint > de.greyshine.pdflettercreation.IndexController.showPage] {
+  "uri": "/error",
+  "host": "0:0:0:0:0:0:0:1",
+  "locale": "de",
+  "headers": {
+    "host": [
+      "localhost:8080"
+    ],
+    "connection": [
+      "keep-alive"
+    ],
+    "upgrade-insecure-requests": [
+      "1"
+    ],
+    "user-agent": [
+      "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+    ],
+    "accept": [
+      "text/html,application/xhtml+xml,application/xml;q\u003d0.9,image/webp,image/apng,*/*;q\u003d0.8"
+    ],
+    "dnt": [
+      "1"
+    ],
+    "referer": [
+      "http://localhost:8080/page/about"
+    ],
+    "accept-encoding": [
+      "gzip, deflate, br"
+    ],
+    "accept-language": [
+      "de,en;q\u003d0.9,en-GB;q\u003d0.8,en-US;q\u003d0.7"
+    ],
+    "cookie": [
+      "JSESSIONID\u003dCC756F14A8CFF0CA5A7FB48BDCE64125"
+    ]
+  },
+  "parameters": {}
+}

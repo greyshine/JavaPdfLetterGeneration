@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" th:fragment="confirmationcode">
+
+	<form class="pure-form pure-form-aligned" action="/confirmationcode" method="post">
+
+		<fieldset>
+		
+			<div class="pure-control-group">
+				<label for="cc-email">E-Mail</label>
+		        <input id="cc-email" type="text" name="email" placeholder="E-Mail" required="required" th:value="${email}">
+			</div>
+
+			<div class="pure-control-group">
+				<label for="cc-code">Confirmation Code</label>
+		        <input id="cc-code" type="text" name="cc" placeholder="confirmation code" required="required" th:value="${cc}">
+			</div>
+		
+		</fieldset>
+		
+		<button type="submit" class="pure-button">Confirm</button>
+		
+	</form>
+
+</html>
+

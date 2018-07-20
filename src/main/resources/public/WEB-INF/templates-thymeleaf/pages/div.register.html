@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" th:fragment="login">
+
+	<form class="pure-form pure-form-aligned" action="/register" method="post">
+        
+        <fieldset>
+        
+        	<legend>Register</legend>
+        	
+        	<div class="pure-control-group">
+				<label for="register-email">E-Mail</label>
+		        <input id="register-email" type="text" name="email" placeholder="E-Mail" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" required="required" value="tester-pdfletter@greyshine.de">
+			</div>
+        
+			<div class="pure-control-group">
+				<label for="register-password" th:text="#{register.label.password}">Passwort</label>
+		        <input id="register-password" type="password" name="password" placeholder="Passwort" pattern="[^@\s]+" required="required" value="passwort">
+        	</div>
+
+			<div class="pure-control-group">
+				<label for="register-passwordRepeat">Passwort<br/>(wiederholung)</label>
+		        <input id="register-passwordRepeat" type="password" name="passwordRepeat" placeholder="Password repeat" pattern="[^@\s]+" required="required" value="passwort">
+        	</div>
+        
+	    </fieldset>
+	
+		<fieldset>
+		
+			<legend th:text="#{register.legend.contact}">Kontakt</legend>
+			
+			<div class="pure-control-group">
+				<label for="register-name" th:text="#{register.label.lastfirstname}">Nachnname, Vorname</label>
+		        <input id="register-name" type="text" name="name" th:placeholder="Name" required="required"  pattern="[^\s]+,\s[^\s]+" value="Schumacher, Dirk" >
+			</div>
+		
+			<div class="pure-control-group">
+				<label for="register-company">Firma</label>
+		        <input id="register-company" type="text" name="company" th:placeholder="#{register.input.placeholder.company}">
+			</div>
+			<div class="pure-control-group">
+				<label for="register-">Strasse Hnr.</label>
+		        <input id="register-" type="text" name="streethno" placeholder="Strasse"required="required" value="Strasse 1" >
+			</div>
+			<div class="pure-control-group">
+				<label for="register-">Postleitzahl</label>
+		        <input id="register-" type="text" name="zip" placeholder="Postleitzahl" pattern="[0-9]{5}" required="required" value="12345" >
+			</div>
+			<div class="pure-control-group">
+				<label for="register-">Stadt</label>
+		        <input id="register-" type="text" name="city" placeholder="Stadt" required="required" value="Großstadt" >
+			</div>
+		
+		</fieldset>
+
+		<fieldset>
+		
+			<legend>abweichende Rechnungsadresse</legend>
+			
+			<p th:text="#{register.leaveEmptyIfNotApplyable}">Falls nicht zutreffend, bitte leer lassen.</p>
+		
+			<div class="pure-control-group">
+				<label for="register-billingaddress-Name">Nachnname, Vorname</label>
+		        <input id="register-billingaddress-Name" type="text" name="billingName" placeholder="Name">
+			</div>
+			<div class="pure-control-group">
+				<label for="register-billingaddress-company">Firma</label>
+		        <input id="register-billingaddress-company" type="text" name="billingCompany" placeholder="Firma">
+			</div>
+			<div class="pure-control-group">
+				<label for="register-billingaddress-streethno">Strasse Hnr.</label>
+		        <input id="register-billingaddress-streethno" type="text" name="billingStreethno" placeholder="Strasse">
+			</div>
+			<div class="pure-control-group">
+				<label for="register-billingaddress-zip">Postleitzahl</label>
+		        <input id="register-billingaddress-zip" type="text" name="billingZip" placeholder="Postleitzahl" pattern="[0-9]{5}">
+			</div>
+			<div class="pure-control-group">
+				<label for="register-billingaddress-city">Stadt</label>
+		        <input id="register-billingaddress-city" type="text" name="billingCity" placeholder="Stadt" pattern="">
+			</div>
+		
+		</fieldset>
+		
+    	<button type="submit" class="pure-button">Register</button>
+	
+	</form>
+
+</html>
+

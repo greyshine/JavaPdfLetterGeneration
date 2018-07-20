@@ -1,0 +1,55 @@
+div#div-letter-input {
+	margin: 20px;
+}
+
+div#div-letter-input h2 {
+	margin: 10px auto 5px;
+}
+
+div#div-letter-input div.topimage {
+	width: 100%;
+	padding: 5px;
+	border: 1px solid grey;
+	border-radius: 3px;
+}
+
+div#div-letter-input div.topimage input[type=file] {
+	border: 0px;
+}
+
+div#div-letter-input div.topimage img {
+	border-radius: 3px;
+}
+
+div#div-letter-input div.addresslines input {
+	min-width: 400px;
+	width: 60%;
+}
+
+div#div-letter-input div.addresslines hr {
+	margin: 15px auto;
+}
+
+div#div-letter-input div.extralines div input:last-child {
+	width: 40%;
+	min-width: 200px;
+}
+
+
+div#div-letter-input input, div#div-letter-input textarea {
+	
+	padding: 5px;
+	border-radius: 3px;
+	border: 1px solid #486F88;
+	background-color: #FFF;
+	margin: 2px;
+}
+
+div#div-letter-input div.letterlines input.subjectline {
+	width: 100%;
+}
+
+div#div-letter-input textarea {
+	width: 100%;
+	min-height: 300px;
+}

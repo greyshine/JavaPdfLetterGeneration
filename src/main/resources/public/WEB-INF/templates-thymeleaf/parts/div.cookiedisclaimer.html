@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" th:fragment="cookiedisclaimer">
+	<p>
+	Cookies helfen dieser Software bei der Bereitstellung seiner Dienste. Durch die Nutzung dieses Angebots erklären Sie sich damit einverstanden, dass Cookies gesetzt werden.&nbsp;
+	<a href="/" onclick="callCookiedisclaimer(); return false;"><i class="material-icons">done</i></a>
+	<a href="/page/imprint">Mehr Informationen.</a>
+	<script type="text/javascript">
+		
+	var callCookiedisclaimer = function(){
+		$.ajax({
+			url:'/ajax/cookiedisclaimer',
+			method:'PUT',
+			success:function(){$('div#cookieDisclaimer').remove();}
+		});
+	};
+	
+	</script>
+	</p>
+</html>
+

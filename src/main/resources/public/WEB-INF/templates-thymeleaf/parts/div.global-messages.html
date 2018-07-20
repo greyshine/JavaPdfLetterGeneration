@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" th:fragment="global-messages">
+	
+	<div id="global-messages">
+	
+		<ul class="messages" th:if="${ !WebContext.globalMessages.isEmpty() }"><li th:each="item : ${WebContext.globalMessages}" th:text="${item}"></li></ul>
+		<ul class="warnings" th:if="${ !WebContext.globalWarnings.isEmpty() }"><li th:each="item : ${WebContext.globalWarnings}" th:text="${item}"></li></ul>
+		<ul class="errors" th:if="${WebContext.isGlobalErrors() }"><li th:each="item : ${WebContext.globalErrors}" th:text="${item}"></li></ul>
+	
+	</div>
+
+</html>
+

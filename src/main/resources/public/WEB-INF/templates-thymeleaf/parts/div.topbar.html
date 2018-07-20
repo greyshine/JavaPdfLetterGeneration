@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" th:fragment="topbar">
+
+	<div><a href="/">PDF-Letters</a></div>
+	<div>
+		<a href="/page/about">Was ist das?</a>
+		&nbsp;|&nbsp;
+		<a href="/page/login" th:if="${session.userId==null}">Login / Registrieren</a>
+		<a href="/logout" th:if="${session.userId!=null}">Logout</a>
+	</div>
+
+</html>

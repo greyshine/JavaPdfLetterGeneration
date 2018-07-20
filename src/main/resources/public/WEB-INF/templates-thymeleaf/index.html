@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+ <head>
+ 
+  <meta charset="utf-8"/>
+
+  <title>PDF</title>
+  
+  <script type="text/javascript" src="/js/jquery-3.1.1.js"></script>
+  <script type="text/javascript" src="/js/greyshine.jqp.inputfile-1.0.js"></script>
+  
+  <link rel="stylesheet" href="/css/pure-min-0.6.2.css">
+  <!--[if gt IE 8]><!-->
+      <link rel="stylesheet" href="/css/grids-responsive-min-0.6.2.css">
+  <!--<![endif]-->
+  <link rel="stylesheet" href="/css/google-material-icons.css">
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="/css/styles.input-letter.css">
+  
+  <style type="text/css">
+  </style>
+  
+  <script type="text/javascript">
+  'use strict';
+  </script>
+  
+  <script type="text/javascript" src="/js/app.js"></script>
+
+  <script type="text/javascript">
+  
+  	$(document).ready( function() {
+  		
+  	} );
+  
+  </script>
+  
+ </head>
+ 
+ <body>
+
+	<div id="cookieDisclaimer" th:if="${cookiedisclaimer==null}" th:include="parts/div.cookiedisclaimer.html"></div>
+	
+	<div id="topbar" th:include="parts/div.topbar.html :: topbar"></div>
+	<div id="navbar" th:include="parts/div.navbar.html"></div>
+	<div th:replace="parts/div.global-messages.html"></div>
+	
+	<div th:if="${page!=null}" class="main-center" th:id="${page.id}" th:include="${page.include}"></div>
+	
+	<div id="bottom" th:include="parts/div.bottom.html :: bottom"></div>
+
+ </body>
+</html>
